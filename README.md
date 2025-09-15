@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page</title>
+  <!-- <link rel="stylesheet" href="index.css"> -->
+
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #fdf8f5;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+.btn {
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-signup {
+    background: #000;
+    color: #fff;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 0px 60px;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+.hero-text h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+.hero-text h1 span {
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: 400;
+    color: #b35a3e;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    margin: 20px 0;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+.start-btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: #000;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hero-img {
+    text-align: center;
+    position: relative;
+}
+
+.hero-img img {
+    max-width: 100%;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 60px auto;
+    max-width: 1000px;
+}
+
+.card {
+    background: rgba(238, 232, 170, 0.868);
+    padding: 10px;
+    border-radius: 40px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+}
+
+.card img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.card span {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px;
+    background: #fff;
+    margin-top: 40px;
+    border-top: 1px solid #eee;
+}
+
+.bottom-nav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: #333;
+}
+
+.stone {
+    position: absolute;
+    left: -14px;
+    width: 274px;
+    height: auto;
+    top: 53px;
+    transform: rotate(-26deg);
+}
+
+.hand {
+    width: 490px;
+    height: auto;
+}
+
+.barcode {
+    position: absolute;
+    margin-top: 500px;
+    /* margin-right: 500px; */
+    left: 150px;
+    width: 240px;
+    height: auto;
+    top: 30px;
+    /* background-color: #000; */
+}
+.space{
+    /* padding-left: 20px; */
+    /* margin-left: 20px;
+    padding-left: 10px; */
+}
+</style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo"> <img src="images/star.png" alt="" height="30px"></div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Marketplace</a></li>
+        <li><a href="#">Artist</a></li>
+        <li><a href="#">Community</a></li>
+        <li><button class="btn btn-signup">Sign Up</button></li>
+        <li><a href="#">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>
+        <span>Unlock</span>
+        The Digital Renaissance
+      </h1>
+      <p>Join the revolution, embrace the digital revolution, and become a part of the ever-evolving NFT ecosystem.</p>
+      <a href="#" class="start-btn">Start →</a>
+    </div>
+    <div class="hero-img">
+      <img class="stone" src="images/stone.png" alt="">
+      <img class="hand" src="images/hand.png" alt="3D Hand Image">
+      <img class="barcode" width="300px" src="images/Barcode.png" alt="">
+    </div>
+  </section>
+
+
+
+  <section class="cards">
+    <div class="card">
+      <img src="images/beer.png" alt="Bear">
+      <h3>Bear</h3>
+      <p>by Andrew Garf</p>
+      <span>$40</span>
+    </div>
+    <div class="card">
+      <img src="images/Lion.png" alt="Lion">
+      <h3>Lion</h3>
+      <p>by Jen Stark</p>
+      <span>$80</span>
+    </div>
+    <div class="card">
+      <img src="images/Cat.png" alt="Cats">
+      <h3>Cats</h3>
+      <p>by Casey Reas</p>
+      <span>$120</span>
+    </div>
+  </section>
+
+
+
+
+  <div class="bottom-nav">
+    <a href="#">
+      <img  class="space" src="images/star.png" width="20px" alt="">Join the Revolution</a>
+    <a href="#"><img class="space" src="images/star.png" width="20px" alt="">Future is Here</a>
+    <a href="#"><img  class="space"src="images/star.png" width="20px" alt="">NFT World</a>
+    <a href="#"><img class="space" src="images/star.png" width="20px" alt="">Rule the Game</a>
+    <a href="#"><img class="space" src="images/star.png" width="20px" alt="">We Are NFT <img  class="space" src="images/star.png" width="20px" alt=""></a>
+  </div>
+
+</body>
+
+</html>
